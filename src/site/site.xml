@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/DECORATION/1.3.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/DECORATION/1.3.0 http://maven.apache.org/xsd/decoration-1.3.0.xsd">
+    <body>
+        <menu ref="modules" />
+        <menu ref="reports" />
+    </body>
+    <skin>
+        <groupId>lt.velykis.maven.skins</groupId>
+        <artifactId>reflow-maven-skin</artifactId>
+        <version>1.1.0</version>
+    </skin>
+    <custom>
+        <reflowSkin>
+            <theme>bootswatch-cosmo</theme>
+            <highlightJs>true</highlightJs>
+            <brand>
+                <name>Libra</name>
+                <href>http://itquasar.github.io/libra/</href>
+            </brand>
+            <slogan>Pense agora, faça agora.</slogan>
+            <titleTemplate>%2$s | %1$s</titleTemplate>
+            <toc>sidebar</toc>
+            <topNav>modules|reports</topNav>
+            <bottomNav>
+                <column>reports</column>
+                <column>modules</column>
+            </bottomNav>
+            <bottomDescription>
+                Projeto de software para ações educativas voltadas à reciclagem e coleta de resíduos recicláveis (latinhas de alumínio, PETs, etc).
+            </bottomDescription>
+            <pages>
+                <index project="project-id">
+                    <shortTitle>Welcome</shortTitle>
+                    <breadcrumbs>false</breadcrumbs>
+                    <toc>false</toc>
+                    <sections>
+                        <carousel />
+                        <body />
+                        <sidebar />
+                        <thumbs>2</thumbs>
+                        <columns>3</columns>
+                    </sections>
+                </index>
+                <developer-info>
+                    <toc>sidebar</toc>
+                </developer-info>
+            </pages>
+        </reflowSkin>
+    </custom>
+</project>

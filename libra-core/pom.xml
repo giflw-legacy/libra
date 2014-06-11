@@ -11,6 +11,13 @@
     <packaging>jar</packaging>
     
     <name>Libra-Core</name>
+    <distributionManagement>
+        <site>
+            <id>gh-pages</id>
+            <name>Libra - github.io</name>
+            <url>http://itquasar.github.io/libra/libra-core</url>
+        </site>
+    </distributionManagement>
     
     <properties>
         <maven.compiler.source>1.7</maven.compiler.source>
