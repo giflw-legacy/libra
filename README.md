@@ -24,33 +24,26 @@ Para acompanhar notícias sobre o projeto piloto, bem como outras referentes ao 
 Especificações
 --------------
 
-Plataforma
-:   Ubuntu
-Linguagem
-:   Java
-Interface
-:   Web, HTML5
-Recursos a serem utilizados
-:   Vídeos, áudios, imagens e textos
+- Plataforma: Ubuntu/Debian
+- Linguagem: Java
+- Interface: Web, HTML5
+- Recursos a serem utilizados: Vídeos, áudios, imagens e textos
 
 ### Estrutura
 
 Módulos
-:   iniciam automaticamente com a apliação
-:   podem ser ativados/desativados
-:   dependem da API do núcleo da aplicação
+- iniciam automaticamente com a apliação
+- podem ser ativados/desativados
+- dependem da API do núcleo da aplicação
+
 Plugins
-:   adicionam funcionalidades aos módulos
-:   podem ser ativados/desativados
-:   dependem das APIs dos módulos
+- adicionam funcionalidades aos módulos
+- podem ser ativados/desativados
+- dependem das APIs dos módulos
 
 ### Formatos
 
-Vídeos
-:   Ogg/Theora (HTML5, webkit linux)
-Áudios
-:   Ogg (HTML5, webkit linux)
-Imagens
-:   PNG, JPG
-Textos
-:   html, markdown (conversão em tempo de execução para html)
+- Vídeos: Ogg/Theora (HTML5, webkit linux)
+- Áudios: Ogg (HTML5, webkit linux)
+- Imagens: PNG, JPG
+- Textos: html, markdown (conversão em tempo de execução para html)
