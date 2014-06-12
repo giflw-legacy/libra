@@ -7,9 +7,9 @@ resíduos recicláveis (latinhas de alumínio, PETs, etc).
 Histórico (breve)
 -----------------
 
-Este projeto iniciou-se em 2013, após o arrombamento de um caixa eletrônico da Caixa Econômica Federal.
-Utilizando-se do equipamento vandalizado, foi criado, em parceria com a Perto, o Porjeto Pescar,
-a ONG Moradia e Cidadania, entre outros parceiros, um cash captador de latinhas de alumínio.
+Este projeto iniciou-se em 2013, após o arrombamento de um caixa eletrônico da CAIXA.
+Utilizando-se do equipamento vandalizado, foi criado, em parceria com a CAIXA, a Perto, o Porjeto Pescar,
+a ONG Moradia e Cidadania, entre outros parceiros (e obviamente ITQuasar), um cash captador de latinhas de alumínio.
 Utilizando um detector de latinhas criado pela Azanonatec, o equipamento é capaz de coletar
 aproximadamente 700 latinhas. Com um software desenvolvido por ITQuasar, utilizando-se tecnologias
 open-source, surgiu a versão conceito hoje instalada no equipamento, chamada de C2Al.
