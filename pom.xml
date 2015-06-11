@@ -9,7 +9,7 @@
 
     <name>Libra</name>
     <url>http://itquasar.com</url>
-    
+
     <distributionManagement>
         <site>
             <id>gh-pages</id>
@@ -17,7 +17,7 @@
             <url>http://itquasar.github.io/libra</url>
         </site>
     </distributionManagement>
-    
+
     <modules>
         <module>libra-core</module>
     </modules>
@@ -35,7 +35,7 @@
             </dependency>
         </dependencies>
     </dependencyManagement>
-    
+
     <build>
         <plugins>
             <plugin>

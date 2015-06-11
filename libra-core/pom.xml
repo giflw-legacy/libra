@@ -9,7 +9,7 @@
     <groupId>org.itquasar.multiverse.libra</groupId>
     <artifactId>libra-core</artifactId>
     <packaging>jar</packaging>
-    
+
     <name>Libra-Core</name>
     <distributionManagement>
         <site>
@@ -18,7 +18,7 @@
             <url>http://itquasar.github.io/libra/libra-core</url>
         </site>
     </distributionManagement>
-    
+
     <properties>
         <maven.compiler.source>1.7</maven.compiler.source>
         <maven.compiler.target>1.7</maven.compiler.target>
