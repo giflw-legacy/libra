@@ -9,12 +9,12 @@
         <version>0.1.0-SNAPSHOT</version>
     </parent>
     <groupId>org.itquasar.multiverse.libra</groupId>
-    <artifactId>libra-core</artifactId>
+    <artifactId>libra-sensor</artifactId>
     <packaging>jar</packaging>
     <!-- -->
-    <name>Libra :: Core</name>
-    <description>API principal</description>
-    <!-- -->
+    <name>Libra :: Sensor</name>
+    <description>API de sensor e implementação no-op</description>
+    <!--  -->
     <distributionManagement>
         <site>
             <id>gh-pages</id>

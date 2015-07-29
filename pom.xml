@@ -1,41 +1,69 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd"
+>
     <modelVersion>4.0.0</modelVersion>
-
     <groupId>org.itquasar.multiverse</groupId>
     <artifactId>libra</artifactId>
     <version>0.1.0-SNAPSHOT</version>
     <packaging>pom</packaging>
-
+    <!-- -->
     <name>Libra</name>
-    <url>http://itquasar.com</url>
-
+    <url>http://itquasar.github.io/libra</url>
+    <inceptionYear>2015</inceptionYear>
+    <description>
+    Projeto de software para ações educativas voltadas à reciclagem e coleta de resíduos recicláveis (latinhas de alumínio, PETs, etc). 
+    Licença GPL (imcompatível com EPL, do módulo libra-screen, que não podem ser `linkados`).
+    </description>
+    <licenses>
+        <license>
+            <name>GPLv3</name>
+            <url>http://www.gnu.org/licenses/gpl-3.0.en.html</url>
+        </license>
+    </licenses>
+    <!-- -->
+    <properties>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <maven.compiler.source>1.8</maven.compiler.source>
+        <maven.compiler.target>1.8</maven.compiler.target>
+    </properties>
+    <!-- -->
+    <scm>
+        <url>scm:git:https://github.com/ITQuasar/libra</url>
+        <connection>scm:git:https://github.com/ITQuasar/libra.git</connection>
+        <developerConnection>scm:git:git@github.com:ITQuasar/libra.git</developerConnection>
+    </scm>
     <distributionManagement>
         <site>
             <id>gh-pages</id>
-            <name>Libra - github.io</name>
-            <url>http://itquasar.github.io/libra</url>
+            <name>${project.name} - github.io</name>
+            <url>http://itquasar.github.io/${project.artifactId}</url>
         </site>
     </distributionManagement>
-
+    <!-- -->
     <modules>
         <module>libra-core</module>
+        <module>libra-sensor</module>
+        <module>libra-screen</module>
     </modules>
-    <properties>
-        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-    </properties>
-
+    <!-- -->
     <dependencyManagement>
         <dependencies>
+            <!-- TEST -->
             <dependency>
                 <groupId>org.testng</groupId>
                 <artifactId>testng</artifactId>
-                <version>6.8.7</version>
+                <version>6.9.6</version>
                 <scope>test</scope>
+            </dependency>
+            <!-- COMPILE -->
+            <dependency>
+                <groupId>org.reflections</groupId>
+                <artifactId>reflections</artifactId>
+                <version>0.9.10</version>
             </dependency>
         </dependencies>
     </dependencyManagement>
-
+    <!-- -->
     <build>
         <plugins>
             <plugin>
@@ -51,7 +79,7 @@
                         <artifactId>reflow-velocity-tools</artifactId>
                         <version>1.1.0</version>
                     </dependency>
-                    <!-- Reflow skin requires Velocity >= 1.7  -->
+                    <!-- Reflow skin requires Velocity >= 1.7 -->
                     <dependency>
                         <groupId>org.apache.velocity</groupId>
                         <artifactId>velocity</artifactId>
@@ -61,4 +89,23 @@
             </plugin>
         </plugins>
     </build>
+    <!-- -->
+    <contributors>
+        <contributor>
+            <name>Guilherme I F L Weizenmann</name>
+            <email>guilherme@itquasar.com</email>
+            <organization>ITQuasar</organization>
+            <organizationUrl>http://itquasar.com</organizationUrl>
+            <timezone>America/Sao_Paulo</timezone>
+            <url>http://itquasar.com</url>
+            <roles>
+                <role>Developer</role>
+            </roles>
+        </contributor>
+    </contributors>
+    <!-- -->
+    <organization>
+        <name>ITQuasar</name>
+        <url>http://itquasar.com</url>
+    </organization>
 </project>

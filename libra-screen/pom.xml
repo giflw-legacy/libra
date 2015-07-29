@@ -1,20 +1,51 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
-  <modelVersion>4.0.0</modelVersion>
-  <parent>
-    <groupId>org.itquasar.multiverse</groupId>
-    <artifactId>libra</artifactId>
-    <version>0.1.0-SNAPSHOT</version>
-  </parent>
-  
-  <groupId>org.itquasar.multiverse.libra</groupId>
-  <artifactId>libra-screen</artifactId>
-  <packaging>jar</packaging>
-  
-  <dependencies>
-    <dependency>
-      <groupId>org.eclipse.swt</groupId>
-      <artifactId>${swt.artifactId}</artifactId>
-    </dependency>
-  </dependencies>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd"
+>
+    <modelVersion>4.0.0</modelVersion>
+    <parent>
+        <groupId>org.itquasar.multiverse</groupId>
+        <artifactId>libra</artifactId>
+        <version>0.1.0-SNAPSHOT</version>
+    </parent>
+    <groupId>org.itquasar.multiverse.libra</groupId>
+    <artifactId>libra-screen</artifactId>
+    <packaging>jar</packaging>
+    <!-- -->
+    <name>Libra :: Screen</name>
+    <description>Navegador embarcado (licença EPL imcompatível com GPL)</description>
+    <!-- -->
+    <repositories>
+        <repository>
+            <id>swt-repo</id>
+            <url>https://raw.githubusercontent.com/maven-eclipse/swt-repo/master/</url>
+        </repository>
+    </repositories>
+    <!-- -->
+    <distributionManagement>
+        <site>
+            <id>gh-pages</id>
+            <name>${project.name} - github.io</name>
+            <url>http://itquasar.github.io/libra/${project.artifactId}</url>
+        </site>
+    </distributionManagement>
+    <!-- -->
+    <profiles>
+        <profile>
+            <id>linux_x86_64</id>
+            <activation>
+                <os>
+                    <family>linux</family>
+                    <arch>amd64</arch>
+                </os>
+            </activation>
+            <dependencies>
+                <dependency>
+                    <groupId>org.eclipse.swt</groupId>
+                    <artifactId>org.eclipse.swt.gtk.linux.x86_64</artifactId>
+                    <version>4.4</version>
+                </dependency>
+            </dependencies>
+        </profile>
+    </profiles>
 </project>
